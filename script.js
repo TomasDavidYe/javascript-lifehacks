@@ -8,7 +8,7 @@ function transformContent(content, keywords){
   let temp = content
 
   keywords.forEach(keyword => {
-    temp = temp.replace(keyword, wrapKeywordWithLink(keyword, `https://www.google.com/search?q=${keyword}`))
+    temp = temp.replace(new RegExp(keyword, 'ig'), wrapKeywordWithLink(keyword, `https://www.google.com/search?q=${keyword}`))
   })
 
   return temp
