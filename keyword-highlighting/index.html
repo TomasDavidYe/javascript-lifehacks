@@ -10,7 +10,6 @@
     <div id="page-wrapper">
         <h1>Keyword Highlighting</h1>
 
-        <form action="#" onsubmit="highlight();return false">
             <div id="form-wrapper">
                 <div>
                     <textarea rows = "3" cols = "60" name = "description" placeholder="Keywords (Each new line = separate keyword)" id="keyword-input"></textarea>
@@ -19,11 +18,10 @@
                     <textarea rows = "5" cols = "60" name = "description" placeholder="Text (Solid block of text with keywords to be highlighted)" id="text-input"></textarea>
                 </div>
                 <div>
-                    <input type="submit" value="Highlight" id="submit-button">
+                    <button  id="submit-button" onclick="highlight()">Highlight</button>
                 </div>
             </div>
 
-        </form>
 
         <h2>Result</h2>
         <div id="result"></div>
