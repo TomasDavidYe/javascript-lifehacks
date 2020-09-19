@@ -15,5 +15,5 @@ function transformContent(content, keywords){
 }
 
 function wrapKeywordWithLink(keyword, link){
-  return `<span style="font-weight: bold"> <a href="${link}" target="_blank"> ${keyword} </a> </span>`
+  return `<a href="${link}" target="_blank"> <span style="font-weight: bold; color: red; font-size: 30px">  ${keyword}  </span> </a>`
 }
